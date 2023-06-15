@@ -20,13 +20,19 @@ export const navigation = [
     ],
   },
   {
-    title: 'მთავარი თემები',
+    title: 'გამოცდილი პროგრამისტებისთვის',
     links: [
       { title: 'ენის სინტაქსი', href: '/docs/language-syntax' },
       {
         title: 'ენის წესები',
         href: '/docs/language-rules',
       },
+    ],
+  },
+  {
+    title: 'დამწყები პროგრამისტებისთვის',
+    links: [
+      { title: 'პროგრამირების საფუძვლები', href: '/docs/programming-fundamentals' },
     ],
   },
 ]
