@@ -30,12 +30,6 @@ export const navigation = [
       },
     ],
   },
-  {
-    title: 'დამწყები პროგრამისტებისთვის',
-    links: [
-      { title: 'პროგრამირების საფუძვლები', href: '/docs/programming-fundamentals' },
-    ],
-  },
 ]
 
 function GitHubIcon(props) {
