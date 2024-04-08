@@ -32,6 +32,7 @@ export const navigation = [
   {
     title: 'დამწყები პროგრამისტებისთვის',
     links: [
+      { title: 'ხშირად დასმული კითხვები', href: '/docs/faq' },
       { title: 'პროგრამირების საფუძვლები', href: '/docs/programming-fundamentals' },
     ],
   },
