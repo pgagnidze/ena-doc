@@ -17,6 +17,7 @@ export const navigation = [
       { title: 'დაიწყეთ აქ', href: '/' },
       { title: 'ინსტალაცია', href: '/docs/installation' },
       { title: 'გამოყენება', href: '/docs/usage' },
+      { title: 'ხშირად დასმული კითხვები', href: '/docs/faq' },
     ],
   },
   {
@@ -32,7 +33,6 @@ export const navigation = [
   {
     title: 'დამწყები პროგრამისტებისთვის',
     links: [
-      { title: 'ხშირად დასმული კითხვები', href: '/docs/faq' },
       { title: 'პროგრამირების საფუძვლები', href: '/docs/programming-fundamentals' },
     ],
   },
