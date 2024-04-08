@@ -7,9 +7,9 @@ description: ენას სინტაქსის ინსტრუქც�
 
 ## Booleans
 
-Booleans are either ჭეშმარიტი or მცდარი.
+Booleans ტიპის მონაცემები შეიძლება იყოს ან `ჭეშმარიტი` ან `მცდარი`.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -18,29 +18,29 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 true
 false
 ```
 
-## Numerals
+## რიცხვები (Numerals)
 
-Numerals support bases (e.g., decimal, binary, octal, or hexadecimal) and exponential notation.
+რიცხვები შეგვიძლია ჩავწეროთ სხვადასხვა სისტემაში (მაგალითად, ათობითი, ორობითი, რვაობითი, or თექსვმეტობითი). ასევე რიცხვები შეგვიძლია წარმოვადგინოთ ექსპონენციალური აღნიშვნით.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
-  მაჩვენე 01 1010 # binary
-  მაჩვენე 07 12 # octal
-  მაჩვენე 0f A # hexadecimal
-  მაჩვენე 1e3 # exponential notation
+  მაჩვენე 01 1010 # ორობითი 
+  მაჩვენე 07 12 # რვაობითი
+  მაჩვენე 0f A # თექვსმეტობითი
+  მაჩვენე 1e3 # ექსპონენციალური აღნიშვნა
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 10
@@ -49,11 +49,11 @@ Output:
 1000
 ```
 
-## Strings
+## სტრიქონები (Strings)
 
-Strings are enclosed in either double quotes or single quotes. special characters are escaped automatically. Strings can be concatenated using the + operator.
+სტრიქონები მოთავსებულია ორმაგ ან ერთმაგ ნიშნულებში. სპეციალური სიმბოლოები ავტომატურად არიან დაცულები (escaped). სტრიქონების გაერთიანება შესაძლებელია '+' ოპერატორის გამოყენებით.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -62,17 +62,17 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 გამარჯობა სამყარო
 ```
 
-## Function declaration
+## ფუნქციის დეკლარაცია (Function declaration)
 
-Functions are declared using the ფუნქცია keyword, followed by the function name, a list of parameters enclosed in parentheses, and a block of code.
+ფუნქციების დეკლარაცია ხდება სიტყვა `ფუნქცია`-ს გამოყენებით, რის შემდეგაც მოდის ფუნქციის სახელი, პარამეტრების სია ფრჩხილებში და კოდის ბლოკი.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -80,17 +80,17 @@ Example:
 }
 ```
 
-Result:
+შედეგი:
 
 ```lua
 true
 ```
 
-## Function call
+## ფუნქციის გამოძახება (Function call)
 
-Functions are called using the function name, followed by a list of arguments enclosed in parentheses.
+ფუნქციების გამოძახება ხდება ფუნქციის სახელის გამოყენებით, რის შემდეგაც მოდის არგუმენტების სია, რომელიც მოქცეულია ფრჩხილებში.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია ფაქტორიალი(ნ = 6) {
@@ -105,17 +105,16 @@ Example:
 }
 ```
 
-Result:
+შედეგი:
 
 ```lua
 720
 ```
 
-## Variables
+## ცვლადები (Variables)
+ცვლადის სახელები შესაძლებელია იყოს ნებისმიერი ასო ან სიტყვა ქართული ალფაბეტიდან.
 
-variables are assigned using variable name, an equals sign, and the new value.
-
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -124,17 +123,17 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 1
 ```
 
-## Return
+## მნიშვნელობის დაბრუნება (Return)
 
-the return keyword is used to return a value from a function. It can also have an expression.
+სიტყვა `დააბრუნე` გამოიყენება მნიშვნელობის ფუნქციიდან დასაბრუნებლად.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -142,17 +141,17 @@ Example:
 }
 ```
 
-Result:
+შედეგი:
 
 ```lua
 2
 ```
 
-## Arrays
+## მასივები (Arrays)
 
-when creating an array you use ახალი keyword. Followed by open and close brackets; inside the brackets you can put any value you want to indicate the size. Finally it has default value. Array indexing starts from 1** not 0 like in most programming languages.
+მასივის შექმნისას გამოიყენება სიტყვა `ახალი`. მას მოჰყვება ღია და დახურული კვადრატული ფრჩხილები; ფრჩხილების შიგნით შეგიძლიათ მიუთითოთ ნებისმიერი მნიშვნელობა, რომელიც მასივის ზომას განსაზღვრავს. მასივს გააჩნია ნაგულისხმევი მნიშვნელობა. მასივის ინდექსაცია იწყება 1-დან და არა 0-დან, როგორც ეს პროგრამირების უმეტეს ენაშია.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -162,14 +161,15 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 [1, 0, 0, 0, 0]
 ```
 
-We can create multidimensional arrays by nesting arrays.
-Example:
+მრავალგანზომილებიანი მასივების შექმნა შესაძლებელია ჩადგმული მასივების გამოყენებით.
+
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -181,7 +181,7 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 [
@@ -190,11 +190,11 @@ Output:
 ]
 ```
 
-## If statements
+## პირობითი ჩანაწერები (If statements)
 
-თუ, თუარა, and თუარადა are used for conditional execution. Expressions doesn't need to be surrounded by parentheses. The body of each branch must be surrounded by curly braces.
+`თუ`, `თუარა`, and `თუარადა` გამოიყენება პირობითი შესრულებისთვის. შედარების ოპერაციები არ არის საჭირო რომ დაიწეროს ფრჩხილებში. ფიგურული ფრჩხილები აუცილებელია პირობის შესრულების ინსტრუქციებისთვის.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -209,17 +209,17 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 5
 ```
 
-## While statements
+## ციკლები (While statements)
 
-სანამ is used for while looping.
+`სანამ` გამოიყენება while ციკლის დასაწერად.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -231,7 +231,7 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 5
@@ -241,11 +241,11 @@ Output:
 1
 ```
 
-## Shell Commands
+## სისტემური ბრძანებები (Shell Commands)
 
-ბრძანება or $ is used for executing shell commands.
+`ბრძანება` ან `$` გამოიყენება სისტემური ბრძანებების გასაშვებად.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -253,7 +253,7 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 გამარჯობა, მსოფლიო!
@@ -267,17 +267,17 @@ or
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 გამარჯობა, მსოფლიო!
 ```
 
-## Print
+## დაბეჭდვა (Print)
 
-მაჩვენე or @ is used for printing.
+`მაჩვენე` ან `@` გამოიყენება მნიშვნელობების დასაბეჭდად.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
@@ -285,7 +285,7 @@ Example:
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 გამარჯობა, მსოფლიო!
@@ -299,24 +299,24 @@ or
 }
 ```
 
-Output:
+დაბეჭდილი:
 
 ```lua
 გამარჯობა, მსოფლიო!
 ```
 
-## Comments
+## კომენტარები (Comments)
 
-single-line comments start with # and continue until the end of the line. Multi-line comments start with #{ and end with #}.
+ერთ-ხაზიანი კომენტარები იწყება `#` და გრძელდება ხაზის ბოლომდე. მრავალ-ხაზიანი კომენტარები იწყება `#{` და მთავრდება `#}`.
 
-Example:
+მაგალითი:
 
 ```lua
 ფუნქცია მთავარი() {
-  მაჩვენე "გამარჯობა, მსოფლიო!" # This is a comment.
+  მაჩვენე "გამარჯობა, მსოფლიო!" # ეს არის ერთ-ხაზიანი კომენტარი.
   #{
-    This is a multi-line comment.
-    This is a comment.
+    ეს არის მრავალ.
+    ხაზიანი კომენტარი.
   #}
 }
 ```
